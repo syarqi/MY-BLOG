@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICHALLS BLOG | ABOUT-ME</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <!-- Tombol Hamburger -->
+      <button onclick="toggleMenu()" class="md:hidden">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+             d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <!-- Menu Horizontal -->
+      <ul id="menu" class="hidden md:hidden top-3 w-full flex justify-center space-x-6">
+        <li>
+          <a  href="index.html" >
+            <i class="fas fa-house text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+        <li>
+          <a href="aboutme.html">
+            <i class="fas fa-user text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+        <li>
+          <a href="project.html">
+            <i class="fas fa-laptop-code text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+        <li>
+          <a href="kontak.html">
+            <i class="fas fa-phone text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+      </ul>
+            <i class="hidden md:flex fa-solid fa-user-circle text-3xl"></i>
+            <ul class="hidden md:flex space-x-6 font-medium">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="aboutme.html" class="hover:text-blue-500">About Me</a></li>
+            <li><a href="project.html" class="hover:text-blue-500">Project</a></li>
+            <li><a href="kontak.html" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- HERO SECTION -->
+    <section class="pt-20">
+        <div class="w-full h-60 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="flex flex-col items-center md:items-start -mt-16 mx-auto md:ml-24 ">
+            <img src="my profil.jpg" alt="Foto Profil" class="md:ml-16 w-32 h-32 object-cover rounded-full border-4 border-white shadow-lg">
+            <h2 class="mt-4 text-2xl font-bold text-center md:text-left">M. Kaisar Fajri Azmus Syarqi</h2>
+            <p class="text-gray-500 text-center md:text-left px-4 md:px-0">Mahasiswa Teknik Informatika | Network Engineer</p>
+            <p class="text-gray-700 text-center md:text-left px-4 md:px-0 md:py-4 md:mr-20">
+                  <b>Kenalin</b> gw ichal, begitu gw di panggil di banyak tempat. Sekarang gw masih mahasiswa di salah satu kampus, namanya <b>STMIK Lombok</b>. Hobby gw ngulik-ngulik hal baru dan salah satu karya gw adalah blog ini, blog yang gw buat karena gw lagi ada waktu luang dan pengen ngulik hal baru. Makasih juga buat <b>Haris</b> temen baik gw yang udah minjemin laptopnya ke gw hingga blog ini bisa jadi.
+                  yahh walaupun belum sempurna, tapi gw lumayan puas dengan hasil gw. makasih dah baca ocehan gw sampe sini dan cus liat liat dulu profil gw di menu menu yang ada di bawah.
+            </p>
+        </div>
+    </section>
+
+<!-- COLLAPSIBLE SECTION -->
+<div class="max-w-5xl justify-start mx-auto md:ml-24 space-y-4">
+
+  <!-- BIODATA -->
+  <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+    <button onclick="toggleSection('biodata')" 
+      class="w-full text-left px-6 py-4 font-semibold text-black hover:text-blue-500 transition-colors flex justify-between items-center">
+      <span><i class="fas fa-id-card mr-2"></i> Biodata Diri</span>
+      <i id="icon-biodata" class="fas fa-chevron-down transition-transform duration-300"></i>
+    </button>
+    <div id="biodata" class="hidden px-6 pb-4 text-gray-700">
+      <ul class="space-y-2">
+        <li><b>Alamat:</b> Bunsalak, Jago, Praya, Lombok Tengah, NTB</li>
+        <li><b>Tanggal Lahir:</b> 19 Januari 2004</li>
+        <li><b>Hobi:</b> Travelling, Mempelajari hal baru, Ngulik Teknologi</li>
+        <li><b>Nama Panggilan:</b> Ichall, Syarqi, Kaisar, Fajri</li>
+        <li><b>Email:</b> - </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PENDIDIKAN -->
+  <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+    <button onclick="toggleSection('pendidikan')" 
+      class="w-full text-left px-6 py-4 font-semibold text-black hover:text-blue-500 transition-colors flex justify-between items-center">
+      <span><i class="fas fa-graduation-cap mr-2"></i> Pendidikan</span>
+      <i id="icon-pendidikan" class="fas fa-chevron-down transition-transform duration-300"></i>
+    </button>
+    <div id="pendidikan" class="hidden px-6 pb-4 text-gray-700">
+      <ul class="space-y-2">
+        <li><b>STMIK Lombok</b> – Teknik Informatika (2022 - Sekarang)</li>
+        <li><b>MAs Sa'adatuddarain</b> – Ilmu Pengetahuan Sosial (2019 - 2022)</li>
+        <li><b>MTs Sa'adatuddarain</b> – Pendidikan Agama Islam (2017 - 2019)</li>
+        <li><b>SDN Bunsalak</b> – (2012 - 2017)</li>
+        <div>
+          <b>Kursus : </b>
+          <ul class="list-disc list-inside">
+            <li>BLK Lombok Tengah – Digital Marketing (2023)</li>
+            <li>REVO U – Fundamental Course Software Engineering</li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ORGANISASI -->
+  <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+    <button onclick="toggleSection('organisasi')" 
+      class="w-full text-left px-6 py-4 font-semibold text-black hover:text-blue-500 transition-colors flex justify-between items-center">
+      <span><i class="fas fa-users mr-2"></i> Organisasi</span>
+      <i id="icon-organisasi" class="fas fa-chevron-down transition-transform duration-300"></i>
+    </button>
+    <div id="organisasi" class="hidden px-6 pb-4 text-gray-700">
+      <ul class="space-y-2">
+        <li><b>Organisasi Santri Sa'adatuddarain (ORSADA)</b> – Bidang Kebersihan, Kesehatan, Bahasa, Ibadah, Taklim, Dakwah (2020-2022)</li>
+        <li><b>Forum Mahasiswa Desa Jago (FORMAJA)</b> – Anggota (2023-sekarang)</li>
+        <li><b>Himpunan Mahasiswa Islam (HMI)</b> – Ketua Bidang PPPA (2024-2025)</li>
+        <li><b>Remaja Masjid Nurul Hakim Bunsalak</b> – Wakil Sekertaris 3 (2025 - sekarang)</li>
+        <li><b>Unit Kegiatan Mahasiswa Computer Network STMIK Lombok (C NET)</b> – Ketua (2025-sekarang)</li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- pengalaman -->
+  <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+    <button onclick="toggleSection('pengalaman')" 
+      class="w-full text-left px-6 py-4 font-semibold text-black hover:text-blue-500 transition-colors flex justify-between items-center">
+      <span><i class="fas fa-briefcase mr-2"></i> Pengalaman</span>
+      <i id="icon-skills" class="fas fa-chevron-down transition-transform duration-300"></i>
+    </button>
+    <div id="pengalaman" class="hidden px-6 pb-4 text-gray-700">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2">Profesional</h3>
+          <ul class="list-disc list-inside">
+            <li>Tim Pemungutan Suara Pemilihan Umum (PEMILU 2024)</li>
+            <li>Tim Pemungutan Suara Pemilihan Kepala Daerah (PILKADA 2024)</li>
+            <li>Sales Bale Network Connection (2024-2025)</li>
+            <li>Manager Operasional Bale Network Connection (2024-2025)</li>
+            <li>Teknisi Bale Network Connection (2024-2025)</li>
+            <li>Tim Pengembang Bale Network Connection (2025)</li>
+            <li>Network Operating Center Bale Network Connection (2025)</li>
+            <li>Tim Management Bale Network Connection (2025)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Volunteer</h3>
+          <ul class="list-disc list-inside">
+            <li>Anggota Panitia Pelaksana Lomba Pidato Bahasa Arab Yayasan Sa'adatuddarain (2022)</li>
+            <li>Pembawa Acara Festifal Bahasa Arab 1 Yayasan Sa'adatuddarain (2022)</li>
+            <li>Anggota Panitia Pelaksana Maulid Nabi Muhammad SAW Remaja Masjid Nurul Hakim Bunsalak (2023)</li>
+            <li>Ketua Panitia Pelaksana Latihan Kader 1 jilid 2 HMI Komisariat STMIK Lombok (2024)</li>
+            <li>Sekertaris 2 Panitia Pelaksana Maulid Nabi Muhammad SAW Remaja Masjid Nurul Hakim Bunsalak (2025)</li>
+            <li>Anggota Panitia Pelaksana Penerimaan Mahasiswa Baru STMIK Lombok (2025)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Prestasi</h3>
+            <ul class="list-disc list-inside">
+              <li>Terbaik 2 - Lomba Ayat-Ayat Pendek Tingkat TK (PHBI Maulid Nabi Desa Jago 2007)</li>
+              <li>Terbaik 3 - Lomba Ayat-ayat Pendek Tingkat TK (PHBI Maulid Nabi Kecamatan Praya 2008)</li>
+              <li>Terbaik 1 - Lomba Adzan Tingkat SD (PHBI Remaja Masjid Nurul Hakim Bunsalak 2010)</li>
+              <li>Harapan 3 - Lomba Pidato Bahasa Indonesia (FLS2N kecamatan praya 2012)</li>
+              <li>Terbaik 2 - Lomba Catur Tingkat SD (O2SN Desa Jago 2014)</li>
+              <li>Terbaik 1 - Lomba Pidato Bahasa Indonesia Tingkat SD (PHBI Remaja Masjid Nurul Hakim Bunsalak 2014)</li>
+              <li>Lulus Dengan Nilai Ujian Terbaik (SDN Bunsalak 2016)</li>
+              <li>Terbaik 1 - Lomba Pidato Bahasa Indonesia (Perayaan Maulid Nabi Yayasan Sa'adatuddarain 2018)</li>
+              <li>Terbaik 2 - Lomba Pidato Bahasa Indonesia (Perayaan Maulid Nabi Yayasan Sa'adatuddarain 2019)</li>
+              <li>Santri Teladan - Kategori Dakwah Putra (Yayasan Sa'adatuddarain 2019)</li>
+              <li>Lulus Dengan Nilai Ujian Terbaik (MTs.Sa'adatuddarain 2019)</li>
+              <li>Terbaik 1 - Lomba Pidato Bahasa Arab (Perayaan Maulid Nabi Yayasan Sa'adatuddarain 2020)</li>
+              <li>Terbaik 1 - Lomba Tahfiz 3 Juz Putra (Perayaan Maulid Nabi Yayasan Sa'adatuddarain 2020)</li>
+              <li>Terbaik 2 - Latihan Kader 1 Jilid 1 (HMI Komisariat STMIK Lombok 2024)</li>
+            </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Lain-Lain</h3>
+            <ul class="list-disc list-inside">
+              <li>Ketua Kelas - SDN Bunsalak Kelas 1-6 (2010-2016)</li>
+              <li>Wakil Ketua Kamar - Kamar Abu-Bakar Ponpes Sa'adatuddarain (2019-2020)</li>
+              <li>Ketua Kamar - Kamar 6 Asrama Putra Ponpes Sa'adatuddarain (2020-2021)</li>
+              <li>Pembantu Syaikh - Syaikh Abdul Hadi Budi ketika mengajar di Ponpes Sa'adatuddarain (2021-2022)</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+    <button onclick="toggleSection('skills')" 
+      class="w-full text-left px-6 py-4 font-semibold text-black hover:text-blue-500 transition-colors flex justify-between items-center">
+      <span><i class="fas fa-lightbulb mr-2"></i> Skills</span>
+      <i id="icon-skills" class="fas fa-chevron-down transition-transform duration-300"></i>
+    </button>
+    <div id="skills" class="hidden px-6 pb-4 text-gray-700">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2">Soft Skills</h3>
+          <ul class="list-disc list-inside">
+            <li>Kerja Tim</li>
+            <li>Kepemimpinan</li>
+            <li>Komunikasi</li>
+            <li>Public Speaking</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Hard Skills</h3>
+          <ul class="list-disc list-inside">
+            <li>Networking, Trouble Shooting</li>
+            <li>HTML, CSS, Tailwind</li>
+            <li>Python, C++, Js</li>
+            <li>Bahasa Arab</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Technical Skills</h3>
+          <ul class="list-disc list-inside">
+            <li>Structured Cabling Instalation (LAN, UTP, Fiber Optic)</li>
+            <li>Network Infrastructured Planning & Cable Management Design</li>
+            <li>Network Infrastructure Maintenance</li>
+            <li>CCTV System Instalation & Conviguration (IP Camera)</li>
+            <li>Mikrotik Routing Conviguration & Network Optimization</li>
+            <li>Wireless Network Deployment & Troubleshooting</li>
+            <li>Network Device Installation (Router, Switch, Acsess Point)</li>
+            <li>Front End (Beginner)</li>
+            <li>UI Framework Implementation (Tailwind-Beginner)</li>
+            <li>Visual Content for Social Media & Marketing</li>
+            <li>Presentation & Layout Design</li>
+            <li>Audience Engagement & Brand Awareness</li>
+            <li>Digital Marketing (Beginner Level)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    }
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      const icon = document.getElementById(`icon-${id}`);
+      section.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+</body>
+</html>

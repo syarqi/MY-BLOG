@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICHALLS BLOG | PROJECT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <!-- Tombol Hamburger -->
+      <button onclick="toggleMenu()" class="md:hidden">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <!-- Menu Horizontal -->
+      <ul id="menu" class="hidden md:hidden top-3 w-full flex justify-center space-x-6">
+        <li>
+          <a href="index.html">
+            <i class="fas fa-house text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+        <li>
+          <a href="aboutme.html">
+            <i class="fas fa-user text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+        <li>
+          <a href="project.html">
+            <i class="fas fa-laptop-code text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+        <li>
+          <a href="kontak.html">
+            <i class="fas fa-phone text-xl hover:text-blue-500"></i>
+          </a>
+        </li>
+      </ul>
+      <!--Navbar -->
+      <i class="hidden md:flex fa-solid fa-user-circle text-3xl"></i>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+        <li><a href="aboutme.html" class="hover:text-blue-500">About Me</a></li>
+        <li><a href="project.html" class="hover:text-blue-500">Project</a></li>
+        <li><a href="kontak.html" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PROJECTS -->
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="w-full h-60 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1350&q=80');"></div>
+    <div class="max-w-6xl mx-auto py-6">
+      <h2 class="mb-2 text-center text-3xl font-bold">My Project</h2>
+      <p class="text-xl mb-4 text-center">selamat datang di halaman project, enjoy this page...!</p>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transition">
+          <img src="pariwisata.png" class="h-48 w-full object-cover rounded-xl shadow-md" alt="Portofolio 1">
+          <a href="https://syarqi.github.io/Web-wisata-daerahku/index.html" target="_blank" class="block">
+            <h3 class="text-xl font-semibold text-center py-4">Website Wisata Lombok</h3>
+            <p class="text-gray-600 text-sm text-center">Website promosi pariwisata Lombok dengan tampilan modern dan responsif.</p>
+          </a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transition">
+          <img src="pon calculator.png" class="h-48 w-full object-cover rounded-xl shadow-md" alt="Portofolio 3">
+          <a href="https://syarqi.github.io/Pon-calculator-v1.0/" target="_blank" class="block">
+            <h3 class="text-xl font-semibold text-center py-4">Pon Calculator</h3>
+            <p class="text-gray-600 text-sm text-center">Proyek html dan js sederhana untuk menghitung kekuatan Laser pada kabel Fiber Optic.</p>
+          </a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transition transition">
+          <img src="login.png" class="h-48 w-full object-cover rounded-xl shadow-md" alt="Portofolio 3">
+          <a href="https://syarqi.github.io/log/" target="_blank" class="block">
+            <h3 class="text-xl font-semibold text-center py-4">Login Page</h3>
+            <p class="text-gray-600 text-sm text-center">Form Login dengan gaya yang Futuristik.</p>
+          </a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transition transition">
+          <img src="log-gunung.png" class="h-48 w-full object-cover rounded-xl shadow-md" alt="Portofolio 3">
+          <a href="https://syarqi.github.io/log_gunung/" target="_blank" class="block">
+            <h3 class="text-xl font-semibold text-center py-4">Login Page</h3>
+            <p class="text-gray-600 text-sm text-center">Form Login dengan gaya yang santai.</p>
+          </a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transition transition">
+          <img src="bucin.png" class="h-48 w-full object-cover rounded-xl shadow-md" alt="Portofolio 3">
+          <a href="https://syarqi.github.io/kesayangan/" target="_blank" class="block">
+            <h3 class="text-xl font-semibold text-center py-4">Web Bucin</h3>
+            <p class="text-gray-600 text-sm text-center">Web seru seruan yang di dedikasikan untuk ayang.</p>
+          </a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transition transition">
+          <img src="firstweb.png" class="h-48 w-full object-cover rounded-xl shadow-md" alt="Portofolio 3">
+          <a href="https://syarqi.github.io/" target="_blank" class="block">
+            <h3 class="text-xl font-semibold text-center py-4">Web Pertama</h3>
+            <p class="text-gray-600 text-sm text-center">Web pertama yang aku coding full menggunakan HTML dan CSS.</p>
+          </a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transition transition">
+          <img src="wordpres.png" class="h-48 w-full object-cover rounded-xl shadow-md" alt="Portofolio 3">
+          <a href="https://syarqi.github.io/" target="_blank" class="block">
+            <h3 class="text-xl font-semibold text-center py-4">Web Praktik</h3>
+            <p class="text-gray-600 text-sm text-center">Web pertama yang aku buat menggunakan wordpress. di buat untuk praktikum BLK 2023.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-gray-500 text-sm border-t">
+    © 2025 Ichall’s Blog. All rights reserved.
+  </footer>
+
+  <!-- Script Toggle -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+
+</body>
+</html>

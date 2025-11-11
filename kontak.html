@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICHALLS BLOG | KONTAK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <!-- Tombol Hamburger -->
+      <button onclick="toggleMenu()" class="md:hidden">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+             d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <!-- Menu Horizontal -->
+      <ul id="menu" class="hidden md:hidden top-3 w-full flex justify-center space-x-6">
+        <li><a href="index.html"><i class="fas fa-house text-xl hover:text-blue-500"></i></a></li>
+        <li><a href="aboutme.html"><i class="fas fa-user text-xl hover:text-blue-500"></i></a></li>
+        <li><a href="project.html"><i class="fas fa-laptop-code text-xl hover:text-blue-500"></i></a></li>
+        <li><a href="kontak.html"><i class="fas fa-phone text-xl hover:text-blue-500"></i></a></li>
+      </ul>
+      <i class="hidden md:flex fa-solid fa-user-circle text-3xl"></i>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+        <li><a href="aboutme.html" class="hover:text-blue-500">About Me</a></li>
+        <li><a href="project.html" class="hover:text-blue-500">Project</a></li>
+        <li><a href="kontak.html" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HALAMAN KONTAK -->
+  <main class="pt-28 pb-16 px-4">
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Hubungi Saya</h2>
+      <form action="mailto:aksaradigital19@gmail.com" method="post" enctype="text/plain">
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2" for="name">
+            <i class="fa-solid fa-user mr-2"></i>Nama
+          </label>
+          <input type="text" id="name" name="name" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2" for="email">
+            <i class="fa-solid fa-envelope mr-2"></i>Email
+          </label>
+          <input type="email" id="email" name="email" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2" for="message">
+            <i class="fa-solid fa-comment-dots mr-2"></i>Pesan
+          </label>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+          <i class="fa-solid fa-paper-plane mr-2"></i>Kirim Pesan
+        </button>
+      </form>
+      <div class="flex justify-center space-x-8 text-3xl py-4">
+        <a href="https://www.instagram.com/el_syarqi?igsh=ajc1NXEzNzNuNGwz" class="text-pink-600 hover:text-pink-800 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/syarqi" class="text-gray-800 hover:text-black transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://wa.me/+6287768450561" class="text-green-600 hover:text-green-800 transition">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
